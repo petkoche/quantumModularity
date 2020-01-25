@@ -1,0 +1,251 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "birichka": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/birichka",
+      "sourceRoot": "projects/birichka/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/birichka",
+            "index": "projects/birichka/src/index.html",
+            "main": "projects/birichka/src/main.ts",
+            "polyfills": "projects/birichka/src/polyfills.ts",
+            "tsConfig": "projects/birichka/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/birichka/src/favicon.ico",
+              "projects/birichka/src/assets"
+            ],
+            "styles": [
+              "projects/birichka/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/birichka/src/environments/environment.ts",
+                  "with": "projects/birichka/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "birichka:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "birichka:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "birichka:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/birichka/src/test.ts",
+            "polyfills": "projects/birichka/src/polyfills.ts",
+            "tsConfig": "projects/birichka/tsconfig.spec.json",
+            "karmaConfig": "projects/birichka/karma.conf.js",
+            "assets": [
+              "projects/birichka/src/favicon.ico",
+              "projects/birichka/src/assets"
+            ],
+            "styles": [
+              "projects/birichka/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/birichka/tsconfig.app.json",
+              "projects/birichka/tsconfig.spec.json",
+              "projects/birichka/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/birichka/e2e/protractor.conf.js",
+            "devServerTarget": "birichka:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "birichka:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "kafence": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/kafence",
+      "sourceRoot": "projects/kafence/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kafence",
+            "index": "projects/kafence/src/index.html",
+            "main": "projects/kafence/src/main.ts",
+            "polyfills": "projects/kafence/src/polyfills.ts",
+            "tsConfig": "projects/kafence/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/kafence/src/favicon.ico",
+              "projects/kafence/src/assets"
+            ],
+            "styles": [
+              "projects/kafence/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kafence/src/environments/environment.ts",
+                  "with": "projects/kafence/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kafence:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kafence:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kafence:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kafence/src/test.ts",
+            "polyfills": "projects/kafence/src/polyfills.ts",
+            "tsConfig": "projects/kafence/tsconfig.spec.json",
+            "karmaConfig": "projects/kafence/karma.conf.js",
+            "assets": [
+              "projects/kafence/src/favicon.ico",
+              "projects/kafence/src/assets"
+            ],
+            "styles": [
+              "projects/kafence/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kafence/tsconfig.app.json",
+              "projects/kafence/tsconfig.spec.json",
+              "projects/kafence/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/kafence/e2e/protractor.conf.js",
+            "devServerTarget": "kafence:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "kafence:serve:production"
+            }
+          }
+        }
+      }
+    }},
+  "defaultProject": "birichka"
+}
