@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from '@ti/shared/shared.module';
-import { CoreModule, ENV_CONFIG } from '@ti/core';
-import { environment } from 'projects/birichka/src/environments/environment';
+import { SharedModule } from '@mz/shared/shared.module';
+import { CoreModule, ENV_CONFIG } from '@mz/core';
+import { environment } from 'projects/kafence/src/environments/environment';
 
 @NgModule({
   declarations: [

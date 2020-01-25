@@ -15,7 +15,7 @@
       "node_modules/@types"
     ],
     "paths": {
-      "@ti/*": [
+      "@mz/*": [
         "libs/*"
       ],
     },
