@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
     RouterModule,
     HttpClientModule,
     ReactiveFormsModule,
+    AngularSvgIconModule,
   ],
   declarations: [
     HeaderComponent,
@@ -21,6 +23,7 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule,
     ReactiveFormsModule,
     HeaderComponent,
+    AngularSvgIconModule,
   ],
 })
 export class SharedModule { }

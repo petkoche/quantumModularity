@@ -27,6 +27,9 @@
               "projects/birichka/src/favicon.ico",
               "projects/birichka/src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./projects/birichka/src/scss"]
+            },
             "styles": [
               "projects/birichka/src/styles.scss"
             ],
@@ -92,6 +95,9 @@
               "projects/birichka/src/favicon.ico",
               "projects/birichka/src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./projects/birichka/src/scss"]
+            },
             "styles": [
               "projects/birichka/src/styles.scss"
             ],
@@ -149,6 +155,9 @@
               "projects/kafence/src/favicon.ico",
               "projects/kafence/src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./projects/kafence/src/scss"]
+            },
             "styles": [
               "projects/kafence/src/styles.scss"
             ],
@@ -214,6 +223,9 @@
               "projects/kafence/src/favicon.ico",
               "projects/kafence/src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./projects/kafence/src/scss"]
+            },
             "styles": [
               "projects/kafence/src/styles.scss"
             ],

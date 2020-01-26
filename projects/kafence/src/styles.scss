@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'colors.scss';
+
+body {
+    background: $iceBlue;
+}
+
+.toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: $darkBrown;
+    color: $latteBrown;
+    font-weight: 600;
+  }
+
+.svg-toolbar {
+    margin: 0 16px;
+    fill: $latteBrown;
+}

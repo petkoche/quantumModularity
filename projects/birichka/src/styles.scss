@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'colors.scss';
+
+body {
+    background: $yellow;
+}
+
+.toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: $foam;
+    color: $darkerBeer;
+    font-weight: 600;
+  }
+
+.svg-toolbar {
+    margin: 0 16px;
+    fill: $darkerBeer;
+}
